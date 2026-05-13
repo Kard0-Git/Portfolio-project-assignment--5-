@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+ background-color:  rgb(0, 0, 0);
+ margin:0;
+}
+
+
+
+.nav-bar{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color:#000000;
+    justify-content: center;
+    z-index: 100; 
+    width: 100%;
+}
+
+
+.nav-bar a{
+    display:block;
+    padding: .5em 1em;
+    margin: .5em;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+
+}
+
+.nav-bar button{
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    margin: .5em;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav-bar :hover, .nav-bar:focus{
+    background-color:  rgba(194, 194, 201, 0.075);
+    color: rgb(138, 138, 184);
+}
+
+
+.hero-card{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1.5rem;
+    color: white;
+    
+}
+
+.hero-card div{
+    background-color: rgba(138, 138, 184, 0.5);
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: box-shadow .3s ease-in-out;
+    margin: 0;
+}
+
+.hero-card div:hover{
+    box-shadow:5px 5px 10px rgb(50, 50, 68);
+
+}
+
+.hero-card a{
+    color: #ffffff;
+}
+
+.text_colour{
+    color: black;
+}
+   
+.my_image{
+    border-radius: 20px;
+    max-width: 100%;
+
+}
+
+#image-card{
+    transition: background-color 1s ease-in-out .2s;
+}
+
+#image-card:hover{
+    background-color: rgb(128, 128, 230);
+    background-image: none;
+    box-shadow: none;
+}
+
+.my_image{
+    transition: transform .9s ease-in-out, box-shadow .9s ease-in-out;
+}
+
+.my_image:hover,.my_image:focus{
+    transform:scale(.65) skewY(12deg);
+    box-shadow: 6px 6px 10px rgba(0,0,0,.2);
+}
+
+.project_card{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: space-around;
+  gap: 3rem;
+  color: white;
+}
+
+.project_card div{
+    background-color: rgba(138, 138, 184, 0.5);
+    padding: 1.4rem;
+    border-radius: 20px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.project_card a{
+    color: white;
+}
+
+
+.project_card div:hover{
+    box-shadow:5px 5px 10px rgb(50, 50, 68);
+
+}
+
+
+.back_to_top{
+    align-items: center;
+    color:#032E5D;
+    background-image: rgb(113, 113, 223);
+    padding: 18px 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    float: left;
+    z-index: 1;
+    border-color:black;
+    overflow: hidden;
+    margin-left: 10rem;
+}
+
+.back_to_top:hover{
+    background-image: none;
+    background-color: rgb(138, 138, 184);
+    color:rgb(52, 52, 70);
+}
+
+.contact_card{
+    display:grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 3rem;
+    color: rgb(0,0,0);
+}
+
+.contact_card div{
+    background-color: rgba(183, 183, 241, 0.5);
+    padding: .8rem;
+    color: white;
+    border-radius: 20px;
+    transition: box-shadow .3s ease-in-out
+}
+
+.contact_card div:hover{
+    box-shadow:5px 5px 10px rgb(50, 50, 68);
+
+}
+
+
+.skills_card{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content:center;
+    gap: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.skills_card div{
+    background-color: rgba(183, 183, 241, 0.5);
+    color:white;
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: box-shadow .3s ease-in;
+}
+
+.skills_card div:hover{
+    box-shadow:5px 5px 10px rgb(50, 50, 68);
+
+}
+
+#firstname{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#first-last{
+    border-radius: 5px;
+    background-color: rgba(183, 183, 241, 0.13);
+    height: 30px;
+    border-color:rgba(183, 183, 241, 0.13)
+}
+
+#last-name{
+    border-radius: 5px;
+    background-color: rgba(183, 183, 241, 0.068);
+    height: 30px;
+    border-color:rgba(183, 183, 241, 0.13)
+}
+
+#email-address{
+    border-radius: 5px;
+    background-color: rgba(183, 183, 241, 0.068);
+    height: 30px;
+    border-color:rgba(183, 183, 241, 0.13)
+}
+
+#area{
+    border-radius: 5px;
+    background-color: rgba(235, 235, 238, 0.596);
+    border-color:rgba(183, 183, 241, 0.13)
+}
+#lastname{
+    color:#ffffff;
+    font-weight: bold;
+}
+
+#email{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#message-box{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#submit{
+    padding: 1rem;
+    background-color: rgba(138, 138, 184, 0.5);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    transition: box-shadow .3s ease-in-out
+}
+
+#submit:hover{
+    box-shadow: 5px 5px 6px rgba(0,0,0,.2);
+}
+
+#submit:active{
+    color:rgb(158, 187, 224);
+}
+
+#socials a {
+    color: white;
+}
+
+footer a{
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 550px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+@media only screen and (min-width: 300px){
+    .project_card{
+        grid-template-columns: auto;
+    }
+    video{
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .nav-bar{
+        flex-wrap: wrap;
+    }
+    .nav-bar a{
+       width: 50;
+    }
+
+    .hero-card{
+        grid-template-columns: auto;
+    }
+    .hero-card img{
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (min-width: 900px){
+    .project_card{
+        grid-template-columns: auto auto;
+    }
+
+    video{
+        width: auto;
+    }
+
+    .nav-bar{
+        flex: auto;
+    }
+
+    .nav-bar a{
+        width: auto;
+    }
+    
+    .hero-card{
+        grid-template-columns: auto auto;
+    }
+
+    
+    
+}
+
+.light-mode{
+    background-color:white;
+}
+
+.text{
+    color: black;
+}
+
+
