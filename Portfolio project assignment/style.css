@@ -1,13 +1,14 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 body{
  background-color:  rgb(0, 0, 0);
- margin:0;
-}
 
+}
 
 
 .nav-bar{
@@ -21,6 +22,7 @@ body{
     justify-content: center;
     z-index: 100; 
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 
@@ -63,9 +65,9 @@ body{
 }
 
 .hero-card div{
-    background-color: rgba(138, 138, 184, 0.5);
+    background-color: rgba(73, 73, 153, 0.425);
     padding: 8px 12px;
-    border-radius: 20px;
+    border-radius:0px;
     transition: box-shadow .3s ease-in-out;
     margin: 0;
 }
@@ -84,7 +86,7 @@ body{
 }
    
 .my_image{
-    border-radius: 20px;
+    border-radius: 0px;
     max-width: 100%;
 
 }
@@ -117,9 +119,8 @@ body{
 }
 
 .project_card div{
-    background-color: rgba(138, 138, 184, 0.5);
+    background-color: rgba(73, 73, 153, 0.425);
     padding: 1.4rem;
-    border-radius: 20px;
     transition: box-shadow .3s ease-in-out;
 }
 
@@ -158,16 +159,28 @@ body{
     display:grid;
     grid-template-columns: auto;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     color: rgb(0,0,0);
 }
 
 .contact_card div{
-    background-color: rgba(183, 183, 241, 0.5);
+    background-color: rgba(73, 73, 153, 0.425);
     padding: .8rem;
     color: white;
     border-radius: 20px;
-    transition: box-shadow .3s ease-in-out
+    transition: box-shadow .3s ease-in-out;
+    margin-top: 4rem;
+}
+
+.contact_card li{
+    list-style-type: none;
+
+}
+
+.contact_card li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .contact_card div:hover{
@@ -264,23 +277,44 @@ body{
 
 #socials a {
     color: white;
+   
 }
 
+#my_projects{
+    color: white;
+   
+  
+
+}
+
+#changeTitleCol{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
 footer a{
     display: grid;
-    grid-template-rows: auto;
-    text-align: center;
+    grid-template-columns: auto;
     color: rgb(0, 0, 0);
     text-decoration: none;
     margin-bottom: 30px;
     font-weight: bold;
+    margin-left: 42%;
 }
 
 footer{
-    margin-top: 550px;
+    margin-top: 200px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    padding: 50px;
+    padding: 40px;
+}
+
+.trademark{
+    margin-left: 0.5%;
+}
+
+.Ham_menu{
+   padding: 1rem;
+   
 }
 
 @media only screen and (min-width: 300px){
@@ -298,6 +332,7 @@ footer{
     .nav-bar a{
        width: 50;
     }
+   
 
     .hero-card{
         grid-template-columns: auto;
@@ -330,6 +365,10 @@ footer{
         grid-template-columns: auto auto;
     }
 
+    .nav-bar{
+        display: flex;
+    }
+
     
     
 }
@@ -340,6 +379,16 @@ footer{
 
 .text{
     color: black;
+
+
 }
+
+.contact_toggle{
+    color: black;
+    
+
+}
+
+
 
 

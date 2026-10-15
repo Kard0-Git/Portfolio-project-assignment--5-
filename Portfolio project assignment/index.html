@@ -11,31 +11,34 @@
 
 <body>
     <nav class="nav-bar" id="navigation">
-        <a href="index.html" class="link">Home</a>
-        <a href="Projects.html" class="link" >Projects</a>
-        <a href="Skills.html" class="link" >Skills</a>
-        <a href="Contact me.html" class="link">Contact me</a>
+        <a href="#main_page" class="link">Home</a>
+        <a href="#my_projects" class="link">Projects</a>
+        <a href="#contact_me" class="link">Contact me</a>
         <button onclick="lmtoggle()" id="btn">Lightmode</button>
     </nav>
+
+    <div class="Ham_menu_holder"></div>
+    <div class="Ham_menu">
+        <span></span>
+        <span></span>
+        <span>></span>
+    </div>
     
-    <div class="hero-card" id="hero_toggle">
+    <div class="hero-card" id="main_page">
          <div id="image-card">
         <img src="images/pic of me.jpg" class="my_image"
-    alt="Image of myself" width="500" height="500">
+    alt="Image of myself" width="500" height="500" id="image_of_me">
 
     </div>
         <div id="sub-hero-card">
-            <center><h1>Ricardo Morgan</h1></center>
-        <center><h2>Software developer</h2></center>
+            <center><h1 id="heading">Ricardo Morgan</h1></center>
+        <center><h2>Games Programmer</h2></center>
 
-        <p id="text">Hi, I'm  Ricardo. I am a software developer
+        <p id="text">Hi, I'm  Ricardo. I am a Games Programmer
             currently in my first year of university.
             During my time at university and in 
-            my free time; I have been working on several projects. You can find all of those projects on my dedicated
-        project page. It will be a mix of personal projects and mandatory coursework. Throughout my software develop
-        journey, I have created many different
-    software such as Games and websites. I am currently working on a video game called shattered mountains. Below is
-    both my github and resume if you want to check that out
+            my free time; I have been working on several games and sysems which you can browse on my website.
+            Some of these games are published on itch.io.
     <br>
     <br>
 <br><br>Github: <a href="https://github.com/Kard0-Git" target="_blank">RM_github</a><br><br>
@@ -44,43 +47,200 @@ Resume: <a href="Resume for help desk job (2).pdf" target="_blank">RM_resume (Li
         </p>
         </div>
 
-    <div id="Skills">
-        <center><h1>Skillset</h1></center>
 
-        <center><h4>As a generalist, I have a variety of skills in the following
-        </h4></center>
-        <ul>
-            <li>Python</li>
-            <li>HTML CSS AND javascript</li>
-            <li>Godot/GDscript</li>
-            <li>Problem solving</li>
-            <li>Analytical thinking</li>
-            <li>Communication</li>
-            <li>Teamwork</li>
-
-        </ul>
-        <p>I speak more about these on my <a href="Skills.html">Skills</a> Page </p>
+  <!--Seperate div for projects-->
+ 
     </div>
-   <div id="About me">
-    <center><h1>About me</h1></center>
+
+    <div id="my_projects">
+   <div id="changeTitleCol">
+         <center><h1>Projects</h1></center>
+   </di>
+      
+    <div class="project_card" id="projects">
+
+ 
+<div id="video-1"><video width="450" height="350" controls>
+    <source src="Videos/Flappy bird Remake.mp4">
+    </video></div>
+
+<div id="card-1"><center><h1>Flappy Bird</h1></center>
+    <center><h2>Made with unity</h2></center>
     <p>
-      Computing was my favorite class in school growing up. I was always excited to sit infront of a computer 
-      and watch my code do something in real time. This passion later carried over to sixth form and then university.
-      As I studied Btec IT in sixth form I learned alot about databases, Wifi networks SQL and soo much more. I am 
-      interested in computers, electronics and programming.
-    <br><br>
-     I actually started a foundation year in university before going onto my first year 
-    </p>
-   </div>
+Created the classic flappy bird in unity. I learned many aspects of the engine making this small game including
+using gameObjects,creating spawners to spawn enemy pipe prefabs and much more.
+
+I also learned basic game logic like collisions, character movenment, scene reloading
+
+
+</p>
+</div>
+
+<div>
+   <video width="450" height="350" controls>
+    <source src="Videos/sok project.mp4">
+</video>
+</div>
+
+<div id="card-2">
+    <center><h1>Space Invaders</h1></center>
+    <center><h2>Interactive python learning platform</h2></center>
+    <p>
+This was a group project assignment for my front end web development module.
+We created an interactive learning website that teaches people the fundamentals of the 
+python programming language. Using the interpreter on our website, you can write python code.
+<br>
+<br>
+Here is the link to our website 
+
+<a href="https://doc.gold.ac.uk/~rmorg003/website/Home.html" target="_blank">SnakeOfKnowledge.com</a>
+</p>
     </div>
-    
+
+    <div id="vid-2">
+        <video widht="450" height="350" controls>
+            <source src="Videos/Paint app project.mp4">
+        </video>
+    </div>
+
+    <div id="card-3">
+        <center><h1>Paint app</h1></center>
+    <p>
+An individual project for my introduction to programming module. We had to create an interactive 
+application using the p5.js javascript framework. In this project, I created a paint app, similar to ms 
+paint on your computer. You can draw anything you like and save it on your computer. 
+
+<h2>Features </h2>
+<ul>
+    <li>Local storage</li>
+    <li>Darkmode/lightmode toggle</li>
+    <li>Text colour changer</li>
+    <li>Colour Picker</li>
+    <li>Canvas Resizer(Based on numerical input)</li>
+    <li>Image loader</li>
+    <li>Save function</li>
+    <li>Brush size toggle</li>
+    <li>Brush head selector</li>
+    <li>Eraser</li>
+    <li>Drawing functionality</li>
+    <li>Clear canvas button to clear everything drawn on
+        the canvas
+    </li>
+</ul>
+Link to app will be available soon
+
+    </div>
+<div>
+
+
+
+<video width="450" height="350" controls>
+    <source src="Videos/Todolist app .mp4">
+</video>
+</div>
+
+<div id="Card 4">
+<center><h1>Todolist app</h1></center>
+<p>
+In this project I made my own todolist application with python, using the tkinter module. This is a personal project I created
+to learn more about the tkinter module and its various features. 
+The todolist allows the user to save their notes in a text document
+in the todolist directory. They can then open the text document and see their notes 
+
+</p>
+
+<h2>Features</h2>
+<ul>
+    <li>Text input feild</li>
+    <li>Colour picker for both the frame fill and the background</li>
+    <li>Basic file handling</li>
+    <li>Button to clear notes, clear last note, etc</li>
+    <li>Button to reset background</li>
+    <li>Button to clear text input</li>
+
+</ul>
+
+You can find this project on my github page 
+</div>
+
+<div>
+<video width="450" height="350" controls>
+     <source src="Videos/Platformer game.mp4">
+</video>
+</div>
+
+<div id="Card-5">
+    <center><h1>Platformer Game</h1></center>    
+    <center><h2>Still in development</h2></center>
+    <p>A Game where the user must keep jumping up onto obstacles. Each level the obstacles 
+        are different. Similar to a game known as doodle jump. Each time the user completes a level, they gain coins
+        which they can use to purchase upgrades.
+
+        link to finished game will be available soon. Link to demo will be available in due time.
+    </p>
+</div>
+
+
+</div>
+
+<!--Seperate div for Contact page-->
+
+<div class="contact_card" >
+
+       <div id="contact_me">
+        <center><h1 id="contact-heading">Contact me</h1></center>
+        <p id="contact_para">You can contact me for any inquirys you may have</p>
+  <form name="contactf" onsubmit="return formSent()" method="post" id="contact-form">
+    <feildset id="form_text">
+            <label for="firstname" id="firstname">First name:</label>
+            <input type="text" id="first-last" name="first-name" size="30" required autofocus>
+            <br>
+            <br>
+            <label for="lastname" id="lastname">Last name:</label>
+            <input type="test" id="last-name" name="last-name" size="30">
+            <br>
+            <br>
+            <label for="email" id="email">Email:</label>
+            <input type="text" name="email" id="email-address" size="30" required>
+            <br>
+            <br>
+            <label for="message-box" id="message-box">Message</label>
+            <br>
+            <textarea placeholder="Limit is 500 words" name="area" id="area" rows="5" cols="44" required></textarea>
+            <br>
+            <br>
+            <center><input type="submit" value="Submit" id="submit"></center>
+    </feildset>
+  </form>
+  <br>
+    <center><h2>My socials</h2></center>
+    <ul>
+        <li>
+            <a href="https://www.linkedin.com/in/ricardo-morgan-1b123233a/" alt="Linked inn profile" target="_blank">linked-inn</a>
+        </li>
+<li>
+<a href="https://www.youtube.com/@RicardoMorgan-l9w" alt="Youtube Channel" target="_blank">Youtube Channel</a>
+</li>
+    </ul>
+    </div>
+
+
+    </div>
+
+<div>
+
+</div>
+
+
 <footer>
-    <a href="index.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Skills.html">Skills</a>
-        <a href="Contact me.html">Contact me</a>
-        <center><p>Ricardo Morgan: &copy;</p></center>
+  <a href="#main_page">Home</a>
+        <a href="#my_projects">Projects</a>
+        <a href="#contact_me">Contact me</a>
+        <center><p class="trademark">Ricardo Morgan: &copy;</p></center>
 </footer>
+
+   </div>
+
 
 
 </body>
